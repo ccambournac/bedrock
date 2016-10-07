@@ -1,4 +1,10 @@
 <?php
+$envs = [
+	'development' => 'http://bedrock.dev',
+	'staging'     => 'http://ccambournac.pp1.mzrn.net/bedrock',
+	'production'  => 'http://ccambournac.pp1.mzrn.net/bedrock'
+];
+define( 'ENVIRONMENTS', serialize( $envs ) );
 
 /** @var string Directory containing all of the site's files */
 $root_dir = dirname(__DIR__);
